@@ -1,0 +1,103 @@
+:root {
+    --Primary-color:hsl(257, 40%, 49%);
+    --Secondary-color: hsl(300, 69%, 71%);
+    --Body:'Open Sans';
+    --Heading:'Poppins';
+}
+
+html {
+    background-color: var(--Primary-color);
+    font-family: sans-serif;
+}
+
+body {
+    background: url(../images/bg-desktop.svg) no-repeat;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+}
+
+.header .logo {
+    max-width: 300px;
+    padding: 35px 0 0 30px;
+    margin-left: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 60px;
+}
+
+.container .ilustracao {
+    max-width: 100%;
+    margin: 0 50px 0 0;
+}
+
+.container .info {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 20px;
+    max-width: 600px;
+}
+
+.container .info .titulo {
+    font-size: 40px;
+    color: #fff;
+    font-family: var(--Heading);
+    font-weight: 600;
+}
+
+.container .info .text {
+    color: #fff;
+    font-size: 19px;
+    text-align: justify;
+    font-family: var(--Body);
+}
+
+.container .info .btn {
+    text-align: center;
+    width: 210px;
+    padding: 20px;
+    border-radius: 50px;
+    border: none;
+    font-family: var(--Body);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--Secondary-color);
+    transition: 0.3s;
+}
+
+.container .info .btn:hover {
+    cursor: pointer;
+    background-color: var(--Secondary-color);
+    color: #fff;
+}
+
+.footer {
+    display: flex;
+    justify-content: end;
+}
+
+.footer div {
+    margin-right: 100px;
+}
+
+.footer i {
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 15px;
+    margin: 0 10px 20px 0;
+    transition: 0.3s;
+}
+
+.footer div i:hover {
+    color: var(--Secondary-color);
+    border-color: var(--Secondary-color);
+}
